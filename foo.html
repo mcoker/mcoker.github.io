@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/patternfly.css" />
     <style>
-      .box {
-        background: var(--img);
-        background-size: cover;
+      body {
+        background: #eee;
+      }
+      .pf-c-description-list__group {
+        align-items: start;
       }
     </style>
   </head>
   <body>
-    <h1>/</h1>
-    <div class="box"></div>
+    <div class="pf-l-bullseye">
+    <div class="pf-c-card">
+      <div class="pf-c-card__body">
+
+        <div class="pf-c-description-list pf-m-horizontal">
+          <div class="pf-c-description-list__group">
+            <dt class="pf-c-description-list__term">
+              Path:
+            </dt>
+            <dd class="pf-c-description-list__description">
+              /
+            </dd>
+          </div>
+          <div class="pf-c-description-list__group">
+            <dt class="pf-c-description-list__term">
+              Input with relative path img in CSS var:
+            </dt>
+            <dd class="pf-c-description-list__description">
+              <input type="text" value="relative path icon" class="pf-c-form-control pf-m-success pf-m-icon-sprite">
+            </dd>
+          </div>
+          <div class="pf-c-description-list__group">
+            <dt class="pf-c-description-list__term">
+              Img with relative path src (should break in subdirs):
+            </dt>
+            <dd class="pf-c-description-list__description">
+              <img class="pf-c-avatar" src="http://localhost:8000/assets/images/status-icon-sprite.svg#success">
+            </dd>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
   </body>
 </html>
 
